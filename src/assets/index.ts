@@ -1,4 +1,6 @@
-import { ReactComponent as ArrowUp } from 'assets/svg/arrow.svg';
+import { ReactComponent as ArrowUp } from 'assets/svg/arrowtop.svg';
+import { ReactComponent as ArrowRight } from 'assets/svg/arrowright.svg';
+
 import { ReactComponent as Blob1 } from 'assets/svg/blob1.svg';
 
 // Companies
@@ -26,9 +28,10 @@ import ecommerce from 'assets/imgs/ecommerce.webp';
 const resume = 'https://drive.google.com/file/d/1iC-yY3WnlbHNXpIdZMYbIl9qHnUQXEb2/view?usp=sharing';
 
 export {
+  ArrowUp,
+  ArrowRight,
   Linkedln,
   Blob1,
-  ArrowUp,
   Css,
   Html,
   Javascript,

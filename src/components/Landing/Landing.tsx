@@ -1,6 +1,6 @@
 import styles from '../Home/Home.module.css';
 import { Blob1 } from 'assets';
-import { Linkedln, Github } from 'assets';
+import { Linkedln, Github, ArrowRight } from 'assets';
 
 const Landing = () => (
   <section className={`${styles.section} home section`}>
@@ -54,7 +54,7 @@ const Landing = () => (
           </p>
           <a href="#portfolio" className={`${styles.button} ${styles.button__flex}`}>
             Portfolio
-            <i className="uil uil-message button__icon" />
+            <ArrowRight className={styles.button__icon} />
           </a>
         </div>
       </div>
