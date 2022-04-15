@@ -1,22 +1,21 @@
 import { ReactComponent as ArrowUp } from 'assets/svg/arrow.svg';
+import { ReactComponent as Blob1 } from 'assets/svg/blob1.svg';
 
 // Companies
-// import { ReactComponent as Linkedin } from 'assets/companies/linkedin.svg';
-// import { ReactComponent as Github } from 'assets/companies/github.svg';
+import { ReactComponent as Linkedln } from 'assets/svg/linkedln.svg';
+import { ReactComponent as Github } from 'assets/svg/github.svg';
 
 // Tech stack
 import { ReactComponent as Css } from 'assets/stack/css.svg'; 
-// import { ReactComponent as Html } from 'assets/stack/html.svg';
-// import { ReactComponent as Javascript } from 'assets/stack/javascript.svg';
+import { ReactComponent as Html } from 'assets/stack/html.svg';
+import { ReactComponent as Javascript } from 'assets/stack/javascript.svg';
 import { ReactComponent as Reactjs } from 'assets/stack/react.svg';
-// import { ReactComponent as Redux } from 'assets/stack/redux.svg';
-// import { ReactComponent as Tailwind } from 'assets/stack/tailwind.svg';
-// import { ReactComponent as Typescript } from 'assets/stack/typescript.svg';
-// import { ReactComponent as Jest } from 'assets/stack/jest.svg';
-// import { ReactComponent as Nextjs } from 'assets/stack/nextjs.svg';
-// import { ReactComponent as TestingLibrary } from 'assets/stack/testing.svg';
-// import { ReactComponent as Git } from 'assets/stack/git.svg';
-// import { ReactComponent as Nodejs } from 'assets/stack/nodejs.svg';
+import { ReactComponent as Redux } from 'assets/stack/redux.svg';
+import { ReactComponent as Tailwind } from 'assets/stack/tailwind.svg';
+import { ReactComponent as Typescript } from 'assets/stack/typescript.svg';
+import { ReactComponent as Jest } from 'assets/stack/jest.svg';
+import { ReactComponent as Nextjs } from 'assets/stack/nextjs.svg';
+import { ReactComponent as TestingLibrary } from 'assets/stack/testing.svg';
 
 // Screenshots
 import anifinder from 'assets/imgs/anifinder.webp';
@@ -27,23 +26,20 @@ import ecommerce from 'assets/imgs/ecommerce.webp';
 const resume = 'https://drive.google.com/file/d/1iC-yY3WnlbHNXpIdZMYbIl9qHnUQXEb2/view?usp=sharing';
 
 export {
-  // Menu,
-  // Close,
+  Linkedln,
+  Blob1,
   ArrowUp,
-  // Linkedin,
-  // Github,
   Css,
-  // Html,
-  // Javascript,
+  Html,
+  Javascript,
   Reactjs,
-  // Redux,
-  // Tailwind,
-  // Typescript,
-  // Jest,
-  // Nextjs,
-  // TestingLibrary,
-  // Git,
-  // Nodejs,
+  Redux,
+  Tailwind,
+  Typescript,
+  Jest,
+  Nextjs,
+  TestingLibrary,
+  Github,
   anifinder,
   coding,
   ecommerce,

@@ -15,6 +15,7 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
+      "indent": ["error", 4],
     "prettier/prettier": "error",
     "react/react-in-jsx-scope": 0,
     "react/function-component-definition": [

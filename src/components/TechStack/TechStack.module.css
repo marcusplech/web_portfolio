@@ -1,4 +1,4 @@
-.tech-skills {
+.tech_skills {
   display: grid;
   align-items: center;
   justify-content: center;
@@ -37,7 +37,7 @@
 }
 
 @media screen and (max-width: 350px) {
-  .tech-skills {
+  .tech_skills {
       grid-template-columns: repeat(4, 53px);
       margin-left: var(--mb-1);
       margin-right: var(--mb-1);
@@ -45,7 +45,7 @@
 }
 
 @media screen and (min-width: 568px) {
-  .tech-skills {
+  .tech_skills {
       grid-template-columns: repeat(4, 65px);
       grid-gap: 2rem;
       font-size: 15px;
@@ -57,13 +57,13 @@
 }
 
 @media screen and (min-width: 768px) {
-  .tech-skills {
+  .tech_skills {
       grid-gap: 4rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .tech-skills {
+  .tech_skills {
       grid-gap: 6rem;
   }
 }

@@ -1,7 +1,7 @@
 // import { ArrowUp } from 'assets';
 import { useEffect, useState } from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
-import { ReactComponent as ArrowUp } from 'assets/svg/arrow.svg';
+import { ReactComponent as ArrowUp } from 'assets/svg/arrowtop.svg';
 
 export default function Top() {
   smoothscroll.polyfill();

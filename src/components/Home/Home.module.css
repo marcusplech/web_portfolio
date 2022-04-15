@@ -13,12 +13,12 @@
   row-gap: 1rem;
 }
 
-.home__social-icon {
+.home__social_icon {
   font-size: 1.25rem;
   color: var(--first-color);
 }
 
-.home__social-icon:hover {
+.home__social_icon:hover {
   color: var(--first-color-alt);
 }
 
@@ -27,7 +27,7 @@
   fill: var(--first-color);
 }
 
-.home__blob-img {
+.home__blob_img {
   width: 160px;
 }
 
@@ -69,7 +69,7 @@
   transition: 0.3s;
 }
 
-.button--flex {
+.button__flex {
   display: inline-flex;
   align-items: center;
 }
