@@ -1,0 +1,27 @@
+.scrollTop {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  opacity: 0.8;
+  transition: 0.4s;
+  padding: 0 0.3rem;
+  background-color: var(--first-color);
+  bottom: -20%;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.scrollTop:hover {
+  background-color: var(--first-color-alt);
+}
+
+.scrollTop__icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.visible {
+  bottom: 5rem;
+}

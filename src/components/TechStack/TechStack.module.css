@@ -1,11 +1,10 @@
 .tech_skills {
   display: grid;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: var(--mb-0-75);
-  grid-template-columns: repeat(4, 60px);
-  grid-gap: 20px 12px;
-  padding: 0 10px;
+  grid-template-columns: repeat(3, 60px);
+  gap: 4rem;
   text-align: center;
   font-size: 13px;
 }
@@ -28,7 +27,7 @@
 }
 
 .stack__svg {
-  width: 60px;
+  width: clamp(4rem, 0.2em, 6rem);
 }
 
 .skills__name {
@@ -36,23 +35,11 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 350px) {
-  .tech_skills {
-      grid-template-columns: repeat(4, 53px);
-      margin-left: var(--mb-1);
-      margin-right: var(--mb-1);
-  }
-}
-
 @media screen and (min-width: 568px) {
   .tech_skills {
       grid-template-columns: repeat(4, 65px);
       grid-gap: 2rem;
       font-size: 15px;
-  }
-
-  .stack__svg {
-      width: 65px;
   }
 }
 
@@ -65,5 +52,7 @@
 @media screen and (min-width: 1024px) {
   .tech_skills {
       grid-gap: 6rem;
+      grid-template-columns: repeat(4, 65px);
+      justify-content: center;
   }
 }

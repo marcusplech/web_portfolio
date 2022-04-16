@@ -1,8 +1,6 @@
 import { ReactComponent as ArrowUp } from 'assets/svg/arrowtop.svg';
 import { ReactComponent as ArrowRight } from 'assets/svg/arrowright.svg';
 
-import { ReactComponent as Blob1 } from 'assets/svg/blob1.svg';
-
 // Companies
 import { ReactComponent as Linkedln } from 'assets/svg/linkedln.svg';
 import { ReactComponent as Github } from 'assets/svg/github.svg';
@@ -31,7 +29,6 @@ export {
   ArrowUp,
   ArrowRight,
   Linkedln,
-  Blob1,
   Css,
   Html,
   Javascript,

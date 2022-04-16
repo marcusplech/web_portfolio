@@ -18,20 +18,13 @@
 }
 
 .portfolio__title {
-  margin-left: 5%;
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-75);
+  text-align: center;
 }
 
 .portfolio__description {
-  margin-left: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.buttons__portfolio {
-  margin-left: 5%;
+  text-align: justify;
 }
 
 .portfolio__button:hover .button__icon {
@@ -39,20 +32,29 @@
 }
 
 .portfolio__button {
-  margin: 5px 5px 5px 0px;
+  display: flex;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.buttons__portfolio {
+  text-align: center;
+  margin-top: var(--mb-0-75);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
 }
 
 @media screen and (min-width: 568px) {
   .portfolio__content {
       grid-template-columns: repeat(2, 1fr);
-  }
-
-  .portfolio__button {
-      margin: 0px 5px 0px 0px;
-  }
-
-  .portfolio__data {
-      margin-left: 10px;
   }
 }
 
@@ -78,18 +80,9 @@
 
   .portfolio__title {
       text-align: center;
-      margin-left: 0px;
   }
 
   .portfolio__description {
       margin: 0 auto;
-  }
-
-  .buttons__portfolio {
-      margin-left: 0px;
-      margin-top: var(--mb-0-75);
-      display: flex;
-      justify-content: center;
-      align-items: center;
   }
 }

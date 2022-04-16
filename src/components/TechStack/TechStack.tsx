@@ -79,7 +79,7 @@ const TechStack = () => (
           style={{ color: '#E33332' }}
           className={styles.stack__svg}
         />
-        <p className={styles.skills__name}>TestingLibrary</p>
+        <p className={styles.skills__name}>Testing Library</p>
       </div>
       <div>
         <Jest arial-label="jest icon" style={{ color: '#C21325' }} className={styles.stack__svg} />

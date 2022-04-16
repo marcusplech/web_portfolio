@@ -1,49 +1,18 @@
 import styles from '../Home/Home.module.css';
-import { Blob1 } from 'assets';
-import { Linkedln, Github, ArrowRight } from 'assets';
+import Icon from 'components/Navigation/Icon';
+import { ArrowRight } from 'assets';
+import BLOB_1 from 'assets/logo/Blob';
 
 const Landing = () => (
   <section className={`${styles.section} home section`}>
     <div className={`${styles.home__container} ${styles.container} ${styles.grid}`}>
       <div className={`${styles.home__content} ${styles.grid}`}>
-        <ul className={styles.home__social}>
-          <li>
-            <a
-              title="link linkedin"
-              href="https://www.linkedin.com/in/devmarcusplech/"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.home__social_icon}
-            >
-              <Linkedln />
-            </a>
-          </li>
-          <li>
-            <a
-              title="link CV"
-              href="https://drive.google.com/file/d/1iC-yY3WnlbHNXpIdZMYbIl9qHnUQXEb2/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.home__social_icon}
-            >
-              <Github />
-            </a>
-          </li>
-          <li>
-            <a
-              title="link github"
-              href="https://github.com/marcusplech"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.home__social_icon}
-            >
-              <Github />
-            </a>
-          </li>
+        <ul aria-label="secondary navigation" className={styles.home__social}>
+          <Icon name="linkedin" className={styles.home__social_icon} />
+          <Icon name="github" className={styles.home__social_icon} />
+          <Icon name="resume" className={styles.home__social_icon} />
         </ul>
-        <div className={styles.home__img}>
-          <Blob1 />
-        </div>
+        <div className={styles.home__img}>{BLOB_1}</div>
         <div className={styles.home__data}>
           <h1 className={styles.home__title}>Hi, I&apos;m Marcus</h1>
           <h2 className={styles.home__subtitle}>Frontend developer</h2>

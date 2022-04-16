@@ -1,6 +1,7 @@
-import { ArrowUp } from 'assets';
 import { useEffect, useState } from 'react';
+import { ArrowUp } from 'assets';
 import smoothscroll from 'smoothscroll-polyfill';
+import styles from './Top.module.css';
 
 export default function Top() {
   smoothscroll.polyfill();
@@ -24,17 +25,16 @@ export default function Top() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     window.history.pushState({}, '', '/');
   };
+
   return (
     <aside>
       <button
         type="button"
         aria-label="scroll to top"
-        className={`fixed bottom-0 right-10 grid h-12 w-12 place-items-center rounded-full bg-green text-secondary transition-all duration-300 ${
-          visible ? '-translate-y-10' : 'translate-y-full'
-        }`}
+        className={`${styles.scrollTop} ${visible && styles.visible}`}
         onClick={scrollToTop}
       >
-        <ArrowUp className="h-7 w-7" />
+        <ArrowUp className={styles.scrollTop__icon} />
       </button>
     </aside>
   );

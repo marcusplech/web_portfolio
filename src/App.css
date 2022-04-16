@@ -49,6 +49,15 @@
     --z-modal: 1000;
 }
 
+.home__blob {
+    width: 249px;
+    fill: var(--first-color);
+  }
+  
+  .home__blob_img {
+    width: 160px;
+  }
+
 /* Font size for large devices */
 @media screen and (min-width: 968px) {
     :root {
@@ -59,6 +68,24 @@
         --normal-font-size: 1rem;
         --small-font-size: 0.875rem;
         --smaller-font-size: 0.813rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .home__blob {
+        width: 220px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .home__blob {
+        width: 330px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .home__blob {
+        width: 320px;
     }
 }
 

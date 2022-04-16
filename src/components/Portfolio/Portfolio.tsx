@@ -5,8 +5,8 @@ import { ArrowRight, ecommerce, anifinder } from 'assets';
 const Portfolio = () => {
   return (
     <section className="portfolio section" id="portfolio">
-      <h2 className={styles.section__title}>Portfolio</h2>
-      <span className={styles.section__subtitle}>Most recent work</span>
+      <h2 className="section__title">Portfolio</h2>
+      <span className="section__subtitle">Most recent work</span>
       <div className={styles.portfolio__container}>
         <div className={styles.portfolio__content}>
           <img
@@ -37,12 +37,12 @@ const Portfolio = () => {
               <a
                 title="link github anifinder"
                 href="https://github.com/marcusplech/anifinder"
-                className="button button--flex button--small portfolio__button"
+                className={styles.portfolio__button}
                 target="_blank"
                 rel="noreferrer"
               >
                 Code
-                <i className="uil uil-arrow-right button__icon" />
+                <ArrowRight className={styles.button__icon} />
               </a>
             </div>
           </div>
@@ -65,22 +65,22 @@ const Portfolio = () => {
               <a
                 title="link ecommerce website"
                 href="https://meuecommerce.netlify.app/"
-                className="button button--flex button--small portfolio__button"
+                className={styles.portfolio__button}
                 target="_blank"
                 rel="noreferrer"
               >
                 Demo
-                <i className="uil uil-arrow-right button__icon" />
+                <ArrowRight className={styles.button__icon} />
               </a>
               <a
                 title="link github ecommerce"
                 href="https://github.com/marcusplech/Ecommerce"
-                className="button button--flex button--small portfolio__button"
+                className={styles.portfolio__button}
                 target="_blank"
                 rel="noreferrer"
               >
                 Code
-                <i className="uil uil-arrow-right button__icon" />
+                <ArrowRight className={styles.button__icon} />
               </a>
             </div>
           </div>
