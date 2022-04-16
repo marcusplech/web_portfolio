@@ -1,16 +1,17 @@
 .scrollTop {
+  border: none;
   position: fixed;
   display: grid;
   place-items: center;
   border-radius: 0.4rem;
   z-index: var(--z-tooltip);
-  opacity: 0.8;
+  opacity: 1;
   transition: 0.4s;
-  padding: 0 0.3rem;
   background-color: var(--first-color);
   bottom: -20%;
   right: 0.5rem;
   cursor: pointer;
+  border-radius: 9999px;
 }
 
 .scrollTop:hover {

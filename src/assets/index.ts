@@ -1,9 +1,11 @@
 import { ReactComponent as ArrowUp } from 'assets/svg/arrowtop.svg';
 import { ReactComponent as ArrowRight } from 'assets/svg/arrowright.svg';
+import { ReactComponent as ArrowMessage } from 'assets/svg/arrowRightMessage.svg';
 
-// Companies
+// Icons
 import { ReactComponent as Linkedln } from 'assets/svg/linkedln.svg';
 import { ReactComponent as Github } from 'assets/svg/github.svg';
+import { ReactComponent as Resume } from 'assets/svg/resume.svg';
 
 // Tech stack
 import { ReactComponent as Css } from 'assets/stack/css.svg'; 
@@ -22,12 +24,10 @@ import anifinder from 'assets/imgs/anifinder.webp';
 import coding from 'assets/imgs/coding.webp';
 import ecommerce from 'assets/imgs/ecommerce.webp';
 
-// Resume
-const resume = 'https://drive.google.com/file/d/1iC-yY3WnlbHNXpIdZMYbIl9qHnUQXEb2/view?usp=sharing';
-
 export {
   ArrowUp,
   ArrowRight,
+  ArrowMessage,
   Linkedln,
   Css,
   Html,
@@ -43,5 +43,5 @@ export {
   anifinder,
   coding,
   ecommerce,
-  resume,
+  Resume,
 };

@@ -1,0 +1,8 @@
+.icons {
+    font-size: 1.25rem;
+    color: var(--first-color);  
+  }
+
+  .icons:hover {
+    color: var(--first-color-alt);
+  }

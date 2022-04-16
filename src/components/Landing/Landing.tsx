@@ -1,18 +1,18 @@
 import styles from '../Home/Home.module.css';
 import Icon from 'components/Navigation/Icon';
-import { ArrowRight } from 'assets';
-import BLOB_1 from 'assets/logo/Blob';
+import { ArrowMessage } from 'assets';
+import Blob from 'assets/logo/Blob';
 
 const Landing = () => (
   <section className={`${styles.section} home section`}>
     <div className={`${styles.home__container} ${styles.container} ${styles.grid}`}>
       <div className={`${styles.home__content} ${styles.grid}`}>
         <ul aria-label="secondary navigation" className={styles.home__social}>
-          <Icon name="linkedin" className={styles.home__social_icon} />
-          <Icon name="github" className={styles.home__social_icon} />
-          <Icon name="resume" className={styles.home__social_icon} />
+          <Icon name="linkedin" />
+          <Icon name="github" />
+          <Icon name="resume" />
         </ul>
-        <div className={styles.home__img}>{BLOB_1}</div>
+        <div className={styles.home__img}>{Blob}</div>
         <div className={styles.home__data}>
           <h1 className={styles.home__title}>Hi, I&apos;m Marcus</h1>
           <h2 className={styles.home__subtitle}>Frontend developer</h2>
@@ -23,7 +23,7 @@ const Landing = () => (
           </p>
           <a href="#portfolio" className={`${styles.button} ${styles.button__flex}`}>
             Portfolio
-            <ArrowRight className={styles.button__icon} />
+            <ArrowMessage className={styles.button__icon} />
           </a>
         </div>
       </div>

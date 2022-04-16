@@ -1,5 +1,6 @@
-import { Github, Linkedln } from 'assets';
 import { HTMLAttributes } from 'react';
+import { Github, Linkedln, Resume } from 'assets';
+import styles from './Icon.module.css';
 
 type IconProps = {
   name: 'linkedin' | 'github' | 'resume';
@@ -12,13 +13,12 @@ export default function Icon({ name, className }: IconProps) {
     resume: 'https://drive.google.com/file/d/1iC-yY3WnlbHNXpIdZMYbIl9qHnUQXEb2/view?usp=sharing',
   };
 
-  const iconClass = 'h-7 w-7 transition-colors duration-200 hover:cursor-pointer hover:text-purple';
   return (
     <li className={className}>
       <a {...{ href: url[name], target: '_blank', rel: 'noreferrer', 'aria-label': name }}>
-        {name === 'linkedin' && <Linkedln className={iconClass} />}
-        {name === 'resume' && <Github className={iconClass} />}
-        {name === 'github' && <Github className={iconClass} />}
+        {name === 'linkedin' && <Linkedln className={styles.icons} />}
+        {name === 'resume' && <Resume className={styles.icons} />}
+        {name === 'github' && <Github className={styles.icons} />}
       </a>
     </li>
   );

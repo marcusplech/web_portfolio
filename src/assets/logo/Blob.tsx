@@ -1,6 +1,6 @@
 import logo from '../imgs/coding.webp';
 
-const BLOB_1 = (
+const Blob = (
   <svg
     aria-label="Blob"
     className="home__blob"
@@ -17,4 +17,4 @@ const BLOB_1 = (
   </svg>
 );
 
-export default BLOB_1;
+export default Blob;
