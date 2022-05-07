@@ -16,76 +16,76 @@ const TechStack = () => (
   <section className="tech section" id="tech-stack">
     <h2 className={styles.skills__title}>Main Skills</h2>
     <div className={styles.separator} />
-    <div className={styles.tech_skills}>
-      <div>
+    <ul className={styles.tech_skills}>
+      <li>
         <Reactjs
           arial-label="react icon"
           style={{ color: '#61DAFB' }}
           className={styles.stack__svg}
         />
         <p className={styles.skills__name}>React</p>
-      </div>
-      <div>
+      </li>
+      <li>
         <Typescript
           arial-label="typescript icon"
           style={{ color: '#3178C6' }}
           className={styles.stack__svg}
         />
         <p className={styles.skills__name}>Typescript</p>
-      </div>
-      <div>
+      </li>
+      <li>
         <Javascript
           arial-label="javascript icon"
           style={{ color: '#F7DF1E' }}
           className={styles.stack__svg}
         />
         <p className={styles.skills__name}>Javascript</p>
-      </div>
-      <div>
+      </li>
+      <li>
         <Html arial-label="html icon" style={{ color: '#E34F26' }} className={styles.stack__svg} />
         <p className={styles.skills__name}>HTML</p>
-      </div>
-      <div>
+      </li>
+      <li>
         <Css arial-label="css icon" style={{ color: '#1572B6' }} className={styles.stack__svg} />
         <p className={styles.skills__name}>CSS</p>
-      </div>
-      <div>
+      </li>
+      <li>
         <Nextjs
           arial-label="nextjs icon"
           style={{ color: '#000000' }}
           className={styles.stack__svg}
         />
         <p className={styles.skills__name}>Nextjs</p>
-      </div>
-      <div>
+      </li>
+      <li>
         <Tailwind
           arial-label="tailwind icon"
           style={{ color: '#06B6D4' }}
           className={styles.stack__svg}
         />
         <p className={styles.skills__name}>Tailwind</p>
-      </div>
-      <div>
+      </li>
+      <li>
         <Redux
           arial-label="redux icon"
           style={{ color: '#764ABC' }}
           className={styles.stack__svg}
         />
         <p className={styles.skills__name}>Redux</p>
-      </div>
-      <div>
+      </li>
+      <li>
         <TestingLibrary
           arial-label="testing library icon"
           style={{ color: '#E33332' }}
           className={styles.stack__svg}
         />
         <p className={styles.skills__name}>Testing Library</p>
-      </div>
-      <div>
+      </li>
+      <li>
         <Jest arial-label="jest icon" style={{ color: '#C21325' }} className={styles.stack__svg} />
         <p className={styles.skills__name}>Jest</p>
-      </div>
-    </div>
+      </li>
+    </ul>
   </section>
 );
 
