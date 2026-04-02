@@ -18,14 +18,13 @@ export default function Portfolio() {
             height={50}
             className="portfolio__img"
             src={imgSrc(anifinder)}
-            alt="anifinder website"
+            alt="Screenshot of the Anifinder anime listing app"
           />
           <div className="portfolio__data">
             <h3 className="portfolio__title">Anime Website</h3>
             <p className="portfolio__description">
-              This is a personal side project of mine (made with React and Redux), which is based on
-              a anime community app (namely, AniList) I&apos;m very fond of. It is designed to
-              showcase the most recent and core React skills (as of 2020).
+              Personal project built with React and Redux, inspired by the AniList community
+              experience. Demonstrates API integration, global state, and responsive UI patterns.
             </p>
             <div className="buttons__portfolio">
               <a
@@ -57,13 +56,13 @@ export default function Portfolio() {
             height={50}
             className="portfolio__img"
             src={imgSrc(ecommerce)}
-            alt="ecommerce website"
+            alt="Screenshot of the ecommerce storefront"
           />
           <div className="portfolio__data">
             <h3 className="portfolio__title">Modern Ecommerce Website</h3>
             <p className="portfolio__description">
-              This is a personal ecommerce project with a modern design made with React, Redux,
-              Ecommercejs API and Stripe.
+              Study project: storefront and checkout with React, Redux, Commerce.js, and Stripe —
+              focused on cart flow, payments UX, and global state.
             </p>
             <div className="buttons__portfolio">
               <a

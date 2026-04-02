@@ -1,7 +1,14 @@
-## Website Porfolio
+## Portfolio — Marcus Plech
 
-This is my portfolio website made with [React](https://reactjs.org/), [Vite](https://vitejs.dev/) and [Typescript](https://www.typescriptlang.org/).
+Personal site built with [Next.js](https://nextjs.org/), [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/).
 
-## Live demo at https://www.mplechdev.com/
+**Live:** [mplechdev.com](https://www.mplechdev.com/)
 
-### Enjoy it.
+```bash
+npm install
+npm run dev
+```
+
+```bash
+npm run build && npm start
+```
