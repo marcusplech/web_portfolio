@@ -8,7 +8,7 @@ import './globals.css';
 import { siteDescription, siteTagline, siteTitle } from '@/content/site';
 
 const poppins = Poppins({
-  weight: ['400', '500', '600'],
+  weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
   display: 'swap',
 });
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={`${poppins.className} antialiased`}>
         <SmoothScrollPolyfill />
         {children}
       </body>

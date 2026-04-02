@@ -15,7 +15,9 @@ export default function Landing() {
           </ul>
           <div className="home__img">{Blob}</div>
           <div className="home__data">
-            <h1 className="home__title">Hi, I&apos;m Marcus</h1>
+            <h1 className="home__title">
+              Hi, I&apos;m <span className="home__title-accent">Marcus</span>
+            </h1>
             <h2 className="home__subtitle">{siteTagline}</h2>
             <p className="home__description">{siteDescription}</p>
             <a href="#portfolio" className="button button__flex">
