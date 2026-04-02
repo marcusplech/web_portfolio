@@ -1,22 +1,9 @@
-import spinner from './spinner.gif';
-
 const Spinner = () => (
-  <div
-    style={{
-      height: '100vh',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-    }}
-  >
+  <div className="flex h-screen items-center justify-center">
     <img
-      src={spinner}
+      src="/spinner.gif"
       alt="Loading..."
-      style={{
-        width: '70px',
-        margin: 'auto',
-        display: 'block',
-      }}
+      className="mx-auto block w-[70px]"
     />
   </div>
 );

@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 build
+.next
+out
 
 # local netlify
 .netlify

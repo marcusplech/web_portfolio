@@ -1,19 +1,15 @@
-import TechStack from 'components/TechStack';
-import Landing from 'components/Landing';
-import Portfolio from 'components/Portfolio';
-import Top from 'components/Top';
+import Landing from '@/components/Landing';
+import Portfolio from '@/components/Portfolio';
+import TechStack from '@/components/TechStack';
+import Top from '@/components/Top';
 
-import styles from '../Home/Home.module.css';
-
-const Home = () => {
+export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className="main">
       <Landing />
       <TechStack />
       <Portfolio />
       <Top />
     </main>
   );
-};
-
-export default Home;
+}

@@ -1,10 +1,10 @@
-import { HTMLAttributes } from 'react';
-import { Github, Linkedln, Resume } from 'assets';
-import styles from './Icon.module.css';
+import type { HTMLAttributes } from 'react';
+
+import { Github, Linkedln, Resume } from '@/assets';
 
 type IconProps = {
   name: 'linkedin' | 'github' | 'resume';
-} & HTMLAttributes<'li'>;
+} & HTMLAttributes<HTMLLIElement>;
 
 export default function Icon({ name, className }: IconProps) {
   const url = {
@@ -16,9 +16,9 @@ export default function Icon({ name, className }: IconProps) {
   return (
     <li className={className}>
       <a {...{ href: url[name], target: '_blank', rel: 'noreferrer', 'aria-label': name }}>
-        {name === 'linkedin' && <Linkedln className={styles.icons} />}
-        {name === 'resume' && <Resume className={styles.icons} />}
-        {name === 'github' && <Github className={styles.icons} />}
+        {name === 'linkedin' && <Linkedln className="icons" />}
+        {name === 'resume' && <Resume className="icons" />}
+        {name === 'github' && <Github className="icons" />}
       </a>
     </li>
   );
