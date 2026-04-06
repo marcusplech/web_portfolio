@@ -1,18 +1,23 @@
+'use client';
+
+import { useState } from 'react';
+
 import Blob from '@/assets/logo/Blob';
 import ArrowMessage from '@/assets/svg/arrowRightMessage.svg';
-import SocialIcon from '@/components/SocialIcon';
+import Github from '@/assets/svg/github.svg';
+import Linkedln from '@/assets/svg/linkedln.svg';
+import Resume from '@/assets/svg/resume.svg';
 import { siteDescription, siteTagline } from '@/content/site';
 
 export default function Landing() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
+  const closeContactModal = () => setIsContactModalOpen(false);
+
   return (
     <section className="section home" id="about" aria-labelledby="hero-title">
       <div className="home__container home__max home__grid">
         <div className="home__content home__grid">
-          <ul aria-label="Social and resume links" className="home__social">
-            <SocialIcon name="linkedin" />
-            <SocialIcon name="github" />
-            <SocialIcon name="resume" />
-          </ul>
           <div className="home__img">{Blob}</div>
           <div className="home__data">
             <h1 id="hero-title" className="home__title">
@@ -20,13 +25,70 @@ export default function Landing() {
             </h1>
             <h2 className="home__subtitle">{siteTagline}</h2>
             <p className="home__description">{siteDescription}</p>
-            <a href="#portfolio" className="button button__flex">
-              Portfolio
-              <ArrowMessage className="button__icon" />
-            </a>
+            <div className="hero__actions">
+              <a href="#portfolio" className="button button__flex">
+                View my work
+                <ArrowMessage className="button__icon" />
+              </a>
+              <button type="button" className="button button__flex" onClick={() => setIsContactModalOpen(true)}>
+                Contact me
+              </button>
+            </div>
           </div>
         </div>
       </div>
+      {isContactModalOpen && (
+        <div className="contact-modal__overlay" onClick={closeContactModal}>
+          <div
+            className="contact-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="contact-modal-title"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              type="button"
+              className="contact-modal__close"
+              aria-label="Close contact options"
+              onClick={closeContactModal}
+            >
+              ×
+            </button>
+            <h3 id="contact-modal-title" className="contact-modal__title">
+              Contact links
+            </h3>
+            <div className="contact-modal__actions">
+              <a
+                href="https://www.linkedin.com/in/devmarcusplech/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button button__flex"
+              >
+                <Linkedln className="button__social-icon" />
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/marcusplech"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button button__flex"
+              >
+                <Github className="button__social-icon" />
+                GitHub
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1zuJF0LUqhrtLc8yC-6hof_gws34w15nh/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button button__flex"
+              >
+                <Resume className="button__social-icon" />
+                Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

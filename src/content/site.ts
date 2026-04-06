@@ -1,10 +1,10 @@
-/** Shared copy for SEO, OG tags, and hero — keep in sync. */
 export const siteTitle = 'Marcus Plech';
 
-export const siteTagline = 'Senior Front-end Developer';
+export const siteTagline =
+  'Senior Front-end Engineer focused on performance, SEO and scalable web applications';
 
 export const siteDescription =
-  'Senior front-end developer with 6+ years building fast, accessible web apps. React, Next.js, TypeScript, testing, and design systems. Open to scalable products and remote collaboration.';
+  'I build high-performance web applications used by thousands to millions of users, optimizing Core Web Vitals, rendering strategies (SSR/SSG), and user experience. Specialized in React, Next.js and TypeScript, with a strong focus on delivering reliable and scalable frontend architecture.';
 
 export const contactLinks = {
   email: 'mailto:mplechdev@gmail.com',

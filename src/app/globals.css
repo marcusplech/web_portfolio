@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --header-height: 3rem;
@@ -25,7 +25,7 @@
   --shadow-lg: 0 12px 48px hsl(250 30% 25% / 0.12);
   --shadow-brand: 0 8px 30px hsl(var(--hue-color) 69% 50% / 0.28);
 
-  --body-font: "Poppins", sans-serif;
+  --body-font: 'Poppins', sans-serif;
 
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -121,7 +121,11 @@ body {
   color: var(--text-color);
   background-color: var(--body-color);
   background-image:
-    radial-gradient(ellipse 120% 90% at 50% -25%, hsl(var(--hue-color) 45% 92% / 0.9), transparent 55%),
+    radial-gradient(
+      ellipse 120% 90% at 50% -25%,
+      hsl(var(--hue-color) 45% 92% / 0.9),
+      transparent 55%
+    ),
     radial-gradient(ellipse 70% 55% at 100% 15%, hsl(262 45% 94% / 0.6), transparent 50%),
     radial-gradient(ellipse 55% 45% at 0% 85%, hsl(230 50% 94% / 0.5), transparent 45%);
   background-attachment: fixed;
@@ -129,7 +133,11 @@ body {
 
 html.dark body {
   background-image:
-    radial-gradient(ellipse 120% 90% at 50% -25%, hsl(var(--hue-color) 35% 20% / 0.55), transparent 55%),
+    radial-gradient(
+      ellipse 120% 90% at 50% -25%,
+      hsl(var(--hue-color) 35% 20% / 0.55),
+      transparent 55%
+    ),
     radial-gradient(ellipse 70% 55% at 100% 15%, hsl(262 30% 18% / 0.5), transparent 50%),
     radial-gradient(ellipse 55% 45% at 0% 85%, hsl(230 35% 16% / 0.45), transparent 45%);
 }
@@ -365,8 +373,15 @@ img {
   max-width: 38rem;
 }
 
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
 .button {
   display: inline-block;
+  cursor: pointer;
   background: linear-gradient(
     135deg,
     hsl(var(--hue-color) 72% 56%) 0%,
@@ -410,6 +425,72 @@ img {
 .button__flex {
   display: inline-flex;
   align-items: center;
+}
+
+.button__social-icons {
+  display: inline-flex;
+  gap: 0.35rem;
+  margin-left: 0.55rem;
+}
+
+.button__social-icon {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+}
+
+.contact-modal__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: hsl(245 30% 8% / 0.55);
+}
+
+.contact-modal {
+  position: relative;
+  width: min(100%, 24rem);
+  border-radius: var(--radius-lg);
+  background: var(--surface-solid);
+  border: 1px solid hsl(var(--hue-color) 20% 85% / 0.55);
+  box-shadow: var(--shadow-lg);
+  padding: 1.25rem;
+}
+
+.contact-modal__title {
+  color: var(--title-color);
+  margin-bottom: 0.85rem;
+  font-size: var(--h3-font-size);
+}
+
+.contact-modal__actions {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.contact-modal__actions .button {
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.contact-modal__close {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.55rem;
+  border: 0;
+  background: transparent;
+  color: var(--text-color);
+  font-size: 1.45rem;
+  line-height: 1;
+  padding: 0.2rem 0.35rem;
+  cursor: pointer;
+}
+
+.contact-modal__close:hover {
+  color: var(--title-color);
 }
 
 .scrollup {
@@ -825,7 +906,9 @@ html.dark .experience-card ul li {
 .icons {
   font-size: 1.25rem;
   color: var(--first-color);
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .home__social li a:hover .icons {

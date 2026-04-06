@@ -25,10 +25,20 @@ export default function ExperienceContact() {
             <a href={contactLinks.email} className="button button__flex">
               Email me
             </a>
-            <a href={contactLinks.linkedin} target="_blank" rel="noopener noreferrer" className="button button__flex">
+            <a
+              href={contactLinks.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button button__flex"
+            >
               LinkedIn
             </a>
-            <a href={contactLinks.github} target="_blank" rel="noopener noreferrer" className="button button__flex">
+            <a
+              href={contactLinks.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button button__flex"
+            >
               GitHub
             </a>
           </div>

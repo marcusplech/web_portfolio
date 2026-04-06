@@ -48,7 +48,11 @@ export default function TechStack() {
           <p className="skills__name">Next.js</p>
         </li>
         <li className="tech-skill-item">
-          <Tailwind aria-label="tailwind icon" style={{ color: '#06B6D4' }} className="stack__svg" />
+          <Tailwind
+            aria-label="tailwind icon"
+            style={{ color: '#06B6D4' }}
+            className="stack__svg"
+          />
           <p className="skills__name">Tailwind</p>
         </li>
         <li className="tech-skill-item">
