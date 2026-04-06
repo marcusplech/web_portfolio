@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 
 import SmoothScrollPolyfill from '@/components/SmoothScrollPolyfill';
+import ThemeProvider from '@/components/ThemeProvider';
+import ThemeToggle from '@/components/ThemeToggle';
 
 import './globals.css';
 
@@ -13,7 +15,7 @@ const poppins = Poppins({
   display: 'swap',
 });
 
-const ogImage = 'https://i.ibb.co/C2xkwJv/coding.png';
+const ogImage = '/opengraph-image.png';
 
 export const metadata: Metadata = {
   title: {
@@ -45,10 +47,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${poppins.className} antialiased`}>
-        <SmoothScrollPolyfill />
-        {children}
+        <a href="#main-content" className="skip-link">
+          Skip to content
+        </a>
+        <ThemeProvider>
+          <SmoothScrollPolyfill />
+          <ThemeToggle />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

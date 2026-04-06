@@ -1,12 +1,14 @@
 import type { HTMLAttributes } from 'react';
 
-import { Github, Linkedln, Resume } from '@/assets';
+import Github from '@/assets/svg/github.svg';
+import Linkedln from '@/assets/svg/linkedln.svg';
+import Resume from '@/assets/svg/resume.svg';
 
-type IconProps = {
+type SocialIconProps = {
   name: 'linkedin' | 'github' | 'resume';
 } & HTMLAttributes<HTMLLIElement>;
 
-export default function Icon({ name, className }: IconProps) {
+export default function SocialIcon({ name, className }: SocialIconProps) {
   const url = {
     linkedin: 'https://www.linkedin.com/in/devmarcusplech/',
     github: 'https://github.com/marcusplech',

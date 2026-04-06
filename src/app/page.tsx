@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic';
 
 import Spinner from '@/assets/spinner/Spinner';
 
-const Home = dynamic(() => import('@/components/Home/Home'), {
+const Home = dynamic(() => import('@/components/Home'), {
   loading: () => <Spinner />,
 });
 

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-import { ArrowUp } from '@/assets';
+import ArrowUp from '@/assets/svg/arrowtop.svg';
 
 export default function Top() {
   const [visible, setVisible] = useState(false);
