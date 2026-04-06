@@ -10,6 +10,7 @@ export const contactLinks = {
   email: 'mailto:mplechdev@gmail.com',
   linkedin: 'https://www.linkedin.com/in/devmarcusplech/',
   github: 'https://github.com/marcusplech',
+  resume: 'https://drive.google.com/file/d/19jCRaFFP72xP3HtR3sAayPD4d2qzzONu/view?usp=sharing',
 } as const;
 
 export const experienceHighlights = [

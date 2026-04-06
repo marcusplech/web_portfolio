@@ -3,6 +3,7 @@ import type { HTMLAttributes } from 'react';
 import Github from '@/assets/svg/github.svg';
 import Linkedln from '@/assets/svg/linkedln.svg';
 import Resume from '@/assets/svg/resume.svg';
+import { contactLinks } from '@/content/site';
 
 type SocialIconProps = {
   name: 'linkedin' | 'github' | 'resume';
@@ -10,9 +11,9 @@ type SocialIconProps = {
 
 export default function SocialIcon({ name, className }: SocialIconProps) {
   const url = {
-    linkedin: 'https://www.linkedin.com/in/devmarcusplech/',
-    github: 'https://github.com/marcusplech',
-    resume: 'https://drive.google.com/file/d/1zuJF0LUqhrtLc8yC-6hof_gws34w15nh/view?usp=sharing',
+    linkedin: contactLinks.linkedin,
+    github: contactLinks.github,
+    resume: contactLinks.resume,
   } as const;
 
   const ariaLabel = {

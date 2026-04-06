@@ -7,7 +7,7 @@ import ArrowMessage from '@/assets/svg/arrowRightMessage.svg';
 import Github from '@/assets/svg/github.svg';
 import Linkedln from '@/assets/svg/linkedln.svg';
 import Resume from '@/assets/svg/resume.svg';
-import { siteDescription, siteTagline } from '@/content/site';
+import { contactLinks, siteDescription, siteTagline } from '@/content/site';
 
 export default function Landing() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -63,7 +63,7 @@ export default function Landing() {
             </h3>
             <div className="contact-modal__actions">
               <a
-                href="https://www.linkedin.com/in/devmarcusplech/"
+                href={contactLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button button__flex"
@@ -72,7 +72,7 @@ export default function Landing() {
                 LinkedIn
               </a>
               <a
-                href="https://github.com/marcusplech"
+                href={contactLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button button__flex"
@@ -81,7 +81,7 @@ export default function Landing() {
                 GitHub
               </a>
               <a
-                href="https://drive.google.com/file/d/1zuJF0LUqhrtLc8yC-6hof_gws34w15nh/view?usp=sharing"
+                href={contactLinks.resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button button__flex"
