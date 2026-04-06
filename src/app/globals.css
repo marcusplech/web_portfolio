@@ -809,6 +809,40 @@ img {
   gap: 1rem;
 }
 
+.case-study__content {
+  max-width: 52rem;
+  margin: 1rem auto 0;
+  padding: 1.25rem;
+  border-radius: var(--radius-xl);
+  background: var(--surface-solid);
+  border: 1px solid hsl(var(--hue-color) 22% 92% / 0.95);
+  box-shadow: var(--shadow-md);
+  display: grid;
+  gap: 1rem;
+}
+
+.case-study__block {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.case-study__heading {
+  font-size: var(--h3-font-size);
+}
+
+.case-study__text {
+  margin: 0;
+  color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .case-study__content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.25rem;
+    row-gap: 1.1rem;
+  }
+}
+
 .experience-card {
   border-radius: var(--radius-xl);
   background: var(--surface-solid);
@@ -830,7 +864,8 @@ html.dark .tech-skill-item,
 html.dark .portfolio__content,
 html.dark .experience-card,
 html.dark .about__content,
-html.dark .key-achievements__content {
+html.dark .key-achievements__content,
+html.dark .case-study__content {
   background: linear-gradient(145deg, hsl(243 22% 17%) 0%, hsl(242 24% 14%) 100%);
   border-color: hsl(var(--hue-color) 22% 34% / 0.65);
   box-shadow:

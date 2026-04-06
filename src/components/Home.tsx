@@ -1,4 +1,5 @@
 import About from '@/components/About';
+import CaseStudy from '@/components/CaseStudy';
 import ExperienceContact from '@/components/ExperienceContact';
 import KeyAchievements from '@/components/KeyAchievements';
 import Landing from '@/components/Landing';
@@ -26,6 +27,9 @@ export default function Home() {
         <Portfolio />
       </MotionReveal>
       <MotionReveal delay={0.17}>
+        <CaseStudy />
+      </MotionReveal>
+      <MotionReveal delay={0.2}>
         <ExperienceContact />
       </MotionReveal>
       <Top />
