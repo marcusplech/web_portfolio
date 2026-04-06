@@ -4,7 +4,7 @@ export const siteTagline =
   'Senior Front-end Engineer focused on performance, SEO and scalable web applications';
 
 export const siteDescription =
-  'I build high-performance web applications used by thousands to millions of users, optimizing Core Web Vitals, rendering strategies (SSR/SSG), and user experience. Specialized in React, Next.js and TypeScript, with a strong focus on delivering reliable and scalable frontend architecture.';
+  'I build high performance web applications used by thousands to millions of users, optimizing Core Web Vitals, rendering strategies (SSR/SSG), and user experience. Specialized in React, Next.js and TypeScript, with a strong focus on delivering reliable and scalable frontend architecture.';
 
 export const contactLinks = {
   email: 'mailto:mplechdev@gmail.com',

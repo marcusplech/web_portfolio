@@ -30,7 +30,11 @@ export default function Landing() {
                 View my work
                 <ArrowMessage className="button__icon" />
               </a>
-              <button type="button" className="button button__flex" onClick={() => setIsContactModalOpen(true)}>
+              <button
+                type="button"
+                className="button button__flex"
+                onClick={() => setIsContactModalOpen(true)}
+              >
                 Contact me
               </button>
             </div>

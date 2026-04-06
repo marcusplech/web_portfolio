@@ -1,4 +1,6 @@
+import About from '@/components/About';
 import ExperienceContact from '@/components/ExperienceContact';
+import KeyAchievements from '@/components/KeyAchievements';
 import Landing from '@/components/Landing';
 import MotionReveal from '@/components/MotionReveal';
 import Portfolio from '@/components/Portfolio';
@@ -12,12 +14,18 @@ export default function Home() {
         <Landing />
       </MotionReveal>
       <MotionReveal delay={0.05}>
-        <TechStack />
+        <KeyAchievements />
       </MotionReveal>
       <MotionReveal delay={0.08}>
+        <About />
+      </MotionReveal>
+      <MotionReveal delay={0.11}>
+        <TechStack />
+      </MotionReveal>
+      <MotionReveal delay={0.14}>
         <Portfolio />
       </MotionReveal>
-      <MotionReveal delay={0.1}>
+      <MotionReveal delay={0.17}>
         <ExperienceContact />
       </MotionReveal>
       <Top />
