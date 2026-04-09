@@ -23,15 +23,15 @@ const projects: PortfolioProject[] = [
     demoUrl: 'https://anifinder-sepia.vercel.app/',
     codeUrl: 'https://github.com/marcusplech/anifinder',
   },
-  {
-    name: 'Modern Ecommerce Website',
-    description:
-      'Study project: storefront and checkout with React, Redux, Commerce.js, and Stripe — focused on cart flow, payments UX, and global state.',
-    image: ecommerce,
-    imageAlt: 'Screenshot of the ecommerce storefront',
-    demoUrl: 'https://meuecommerce.netlify.app/',
-    codeUrl: 'https://github.com/marcusplech/Ecommerce',
-  },
+  // {
+  //   name: 'Modern Ecommerce Website',
+  //   description:
+  //     'Study project: storefront and checkout with React, Redux, Commerce.js, and Stripe — focused on cart flow, payments UX, and global state.',
+  //   image: ecommerce,
+  //   imageAlt: 'Screenshot of the ecommerce storefront',
+  //   demoUrl: 'https://meuecommerce.netlify.app/',
+  //   codeUrl: 'https://github.com/marcusplech/Ecommerce',
+  // },
 ];
 
 export default function Portfolio() {
