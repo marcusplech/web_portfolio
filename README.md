@@ -1,4 +1,4 @@
-## Portfolio — Marcus Plech
+## Portfolio — Marcus Plech.
 
 Personal site built with [Next.js](https://nextjs.org/), [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/).
 
