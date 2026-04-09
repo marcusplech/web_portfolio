@@ -1,7 +1,7 @@
 import Image, { type StaticImageData } from 'next/image';
 
 import anifinder from '@/assets/imgs/anifinder.png';
-import ecommerce from '@/assets/imgs/ecommerce.webp';
+import ecommerce from '@/assets/imgs/ecommerce.png';
 import ArrowRight from '@/assets/svg/arrowright.svg';
 
 type PortfolioProject = {
@@ -9,6 +9,8 @@ type PortfolioProject = {
   description: string;
   image: string | StaticImageData;
   imageAlt: string;
+  imageWidth: number;
+  imageHeight: number;
   demoUrl: string;
   codeUrl: string;
 };
@@ -20,18 +22,23 @@ const projects: PortfolioProject[] = [
       'Anime discovery platform inspired by AniList, rebuilt with Next.js and Tailwind CSS. Uses React Query for data fetching, React Hook Form for filters/search, and e2e test coverage with Playwright.',
     image: anifinder,
     imageAlt: 'Screenshot of the Anifinder anime listing app',
+    imageWidth: 1024,
+    imageHeight: 548,
     demoUrl: 'https://anifinder-sepia.vercel.app/',
     codeUrl: 'https://github.com/marcusplech/anifinder',
   },
-  // {
-  //   name: 'Modern Ecommerce Website',
-  //   description:
-  //     'Study project: storefront and checkout with React, Redux, Commerce.js, and Stripe — focused on cart flow, payments UX, and global state.',
-  //   image: ecommerce,
-  //   imageAlt: 'Screenshot of the ecommerce storefront',
-  //   demoUrl: 'https://meuecommerce.netlify.app/',
-  //   codeUrl: 'https://github.com/marcusplech/Ecommerce',
-  // },
+  {
+    name: 'Modern Ecommerce Website',
+    description:
+      'Storefront and catalog with cart flow and dark/light theme — built with Next.js 15 (App Router) and TypeScript, styled with Tailwind CSS, with TanStack Query for async data and caching, and React Hook Form for forms.',
+    image: ecommerce,
+    imageAlt:
+      'Screenshot of the ecommerce catalog in dark mode — product grid with theme toggle and cart',
+    imageWidth: 1024,
+    imageHeight: 451,
+    demoUrl: 'https://mplechecommerce.vercel.app/',
+    codeUrl: 'https://github.com/marcusplech/Ecommerce',
+  },
 ];
 
 export default function Portfolio() {
@@ -46,8 +53,8 @@ export default function Portfolio() {
               className="portfolio__img"
               src={project.image}
               alt={project.imageAlt}
-              width={960}
-              height={540}
+              width={project.imageWidth}
+              height={project.imageHeight}
               sizes="(max-width: 1024px) 90vw, 700px"
             />
             <div className="portfolio__data">
