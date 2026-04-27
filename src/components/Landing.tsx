@@ -1,8 +1,9 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 
-import Blob from '@/assets/logo/Blob';
+import profilePhoto from '@/assets/imgs/profile.png';
 import ArrowMessage from '@/assets/svg/arrowRightMessage.svg';
 import Github from '@/assets/svg/github.svg';
 import Linkedln from '@/assets/svg/linkedln.svg';
@@ -18,7 +19,18 @@ export default function Landing() {
     <section className="section home" id="about" aria-labelledby="hero-title">
       <div className="home__container home__max home__grid">
         <div className="home__content home__grid">
-          <div className="home__img">{Blob}</div>
+          <div className="home__img">
+            <div className="home__portrait-wrap">
+              <Image
+                src={profilePhoto}
+                alt="Portrait of Marcus Plech"
+                className="home__portrait"
+                fill
+                priority
+                sizes="(max-width: 350px) 168px, (max-width: 768px) 208px, 252px"
+              />
+            </div>
+          </div>
           <div className="home__data">
             <h1 id="hero-title" className="home__title">
               Hi, I&apos;m <span className="home__title-accent">Marcus</span>
